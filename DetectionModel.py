@@ -9,13 +9,13 @@ from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 from keras.utils import to_categorical
 
 emotion_folders = [
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\angry",
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\disgust",
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\fear",
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\happy",
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\neutral",
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\sad",
-    "C:\\Users\\admin\\OneDrive\\Desktop\\train\\surprise",
+    "C:\\Users\\Upadh\\Download\\train\\angry",
+    "C:\\Users\\Upadh\\Download\\train\\disgust",
+    "C:\\Users\\Upadh\\\Download\\train\\fear",
+    "C:\\Users\\Upadh\\Download\\train\\happy",
+    "C:\\Users\\Upadh\\Download\\train\\neutral",
+    "C:\\Users\\Upadh\\Download\\train\\sad",
+    "C:\\Users\\Upadh\\Download\\train\\surprise",
 ]
 
 def load_data(emotion_folders):
