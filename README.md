@@ -7,6 +7,7 @@ Built with Python at its core, the system integrates several powerful libraries 
 The Emotion Recognition System operates by continuously analyzing facial features detected from video streams, interpreting emotional states in real-time, and presenting the results through intuitive visual indicators. Its modular and extensible architecture makes it highly adaptable, allowing for easy customization and future enhancements.
 With its wide range of practical applications, this system has the potential to revolutionize various fields — from enhancing user experience in human-computer interaction, supporting mental health monitoring, and refining marketing strategies by analyzing customer responses, to enabling intelligent surveillance systems capable of advanced behavior analysis.
 
+# datasets used: https://www.kaggle.com/datasets/msambare/fer2013
 # Features:
 Real-time emotion detection via webcam or camera feed.
 Recognizes emotions such as happiness, sadness, anger, surprise, and more.
