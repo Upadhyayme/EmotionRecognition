@@ -3,10 +3,11 @@ import cv2
 import numpy as np
 from keras.models import load_model
 
-# Load model and classifier
 model = load_model("emotion_detection_model.h5")
 EMOTIONS = ["Angry", "Disgust", "Fear", "Happy", "Sad", "Surprise", "Neutral"]
-face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+face_cascade = cv2.CascadeClassifier(
+    cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
+)
 
 def detect_emotion_from_image(img):
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
@@ -20,5 +21,10 @@ def detect_emotion_from_image(img):
         results.append(emotion)
     return ", ".join(results) if results else "No face detected"
 
-interface = gr.Interface(fn=detect_emotion_from_image, inputs="image", outputs="text", title="Emotion Detector")
+interface = gr.Interface(
+    fn=detect_emotion_from_image,
+    inputs="image",
+    outputs="text",
+    title="Emotion Detector"
+)
 interface.launch()
